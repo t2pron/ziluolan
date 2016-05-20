@@ -136,7 +136,9 @@ function uazoh_enqueue_style()
 {
     //Javascript
     //CSS
-    wp_enqueue_style('tuya-carousel', get_stylesheet_directory_uri() . '/css/carousel.css');
+    if(is_home()){
+        wp_enqueue_style('tuya-carousel', get_stylesheet_directory_uri() . '/css/carousel.css');
+    }
     // Load our main stylesheet.
     wp_enqueue_style('tuya-style', get_stylesheet_uri());
 }
@@ -216,7 +218,7 @@ function dmeng_paging_nav($cur_page) {
             'format' => '?paged=%#%',
             'current' => max( 1, get_query_var('paged') ),
             'total' => $wp_query->max_num_pages,
-            'end_size' => 13, //最多显示13个页码
+            'end_size' => 3, //最多显示13个页码
             'type' => 'array' //数组类型
         ) );
         //我添加了HTML代码和样式，你可以修改或者删除

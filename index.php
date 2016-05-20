@@ -18,7 +18,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class=""></li>
             <li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -26,24 +26,24 @@ get_header(); ?>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item">
-                <a href="<?php echo bloginfo('home'); ?>/05/772.html" target="_blank">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/05/789.html" target="_blank">
                 <img class="first-slide"
-                     src="<?php echo get_template_directory_uri(); ?>/img/MG_0604.png"
+                     src="<?php echo get_template_directory_uri(); ?>/img/789.jpg"
 
                      alt="First slide">
                 </a>
             </div>
             <div class="item">
-                <a href="#" target="_blank">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/05/799.html" target="_blank">
                 <img class="second-slide"
-                     src="<?php echo get_template_directory_uri(); ?>/img/MG_0605.png"
+                     src="<?php echo get_template_directory_uri(); ?>/img/799.jpg"
                      alt="Second slide">
                 </a>
             </div>
             <div class="item active">
-                <a href="#" target="_blank">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/05/805.html" target="_blank">
                 <img class="third-slide"
-                     src="<?php echo get_template_directory_uri(); ?>/img/MG_06046.png"
+                     src="<?php echo get_template_directory_uri(); ?>/img/805.jpg"
                      alt="Third slide">
                 </a>
             </div>
@@ -60,7 +60,7 @@ get_header(); ?>
 
     <!--最新内容和公司简介-->
     <div class="container projects ">
-        <div class="projects-header page-header span7  text-center">
+        <div class="page-header title-header span7  text-center">
             <h2><?php bloginfo('name'); ?></h2>
 
             <p><?php bloginfo('description'); ?></p>

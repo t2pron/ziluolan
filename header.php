@@ -41,7 +41,7 @@
     <?php if(!empty($smof_data['custom_favicon']['url'])) { ?><link rel="icon" type="image/png" href="<?php echo esc_url($smof_data['custom_favicon']['url']); ?>" /><?php }else{echo '<link rel="icon" type="image/png" href="'.get_template_directory_uri().'/img/favicon/apple-touch-icon-144-precomposed.png" />';} ?>
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <?php wp_head(); ?>
+
     <?php  if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
@@ -57,7 +57,7 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -105,7 +105,7 @@
                         </form>
 
                         <ul class="nav navbar-nav navbar-right hidden-sm">
-                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/about/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])">关于</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/about/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])">联系我们</a></li>
                         </ul>
                     </div>
                 </div>
